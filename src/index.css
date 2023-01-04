@@ -1,13 +1,76 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap'); 
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-size: 6rem;
+}
+.search-bar {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10%;
+}
+
+.app input {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  border-radius:7pt;
+  border: 1px solid rgba(255,255,255, 0.8);
+  background: rgba(255,255,255, 0.1);
+  color: #f8f8f8;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+  padding: 15%;
+}
+
+.app::before {
+  content: '';
+  background-image: url('./assets/sunny.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.app .bottom {
+  margin-top: 20%;
+  padding: 10%;
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgba(255, 255, 255, 0.311);
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+}
+
+.bold {
+  font-weight:900;
+}
+
+.title {
+  font-size: 0.8em;
 }
